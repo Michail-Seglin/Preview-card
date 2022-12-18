@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Mulish';
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('./fonts/Mulish-Bold.ttf') format('truetype'),
+        url('./fonts/Mulish-ExtraBold.ttf') format('truetype'),
+        url('./fonts/Mulish-Regular.ttf') format('truetype'),
+        url('./fonts/Mulish-Medium.ttf') format('truetype');
+}
+
+body {
+    width: 1120px;
+    margin: 0 auto;
+    background: #F5F5F5;
+
+}
+
+/* header */
+header .img-logo {
+    width: 124px;
+    height: 38px;
+    background-image: url(./assets/Course\ topics.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background: #F5F5F5;
+    position: fixed;
+    width: 1120px;
+    margin: 0 auto;
+    top: 0;
+}
+
+header .btn {
+    background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
+    border-radius: 33px;
+    font: 700 16px 'Mulish';
+    color: #FFFFFF;
+    width: 147px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav p {
+    margin-right: 35px;
+
+}
+
+/* ЗАКОНЧИТЬ С ОТСТУПАМИ */
+header nav p:not(:last-child) {
+    margin-right: 35px;
+}
+
+/* main */
+section .introductory {}
+
+.introductory .img-video {
+    background-image: url(./assets/Group\ 7.svg);
+    background-repeat: no-repeat;
+    width: 590px;
+    height: 360px;
+    background-size: contain;
+    position: relative;
+    left: 120px;
+
+}
+
+.introductory {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.introductory h1 {
+    font: 800 60px 'Mulish';
+    color: #001A49;
+}
+
+.introductory p {
+    font: 400 20px 'Mulish';
+    color: #4F596A;
+    margin-top: 35px;
+}
+
+.introductory .btn {
+    background: linear-gradient(44.11deg, #8FBBE6 15.75%, #3D75BF 84.63%);
+    border-radius: 33px;
+    width: 206px;
+    padding: 19px 0;
+    font: 700 20px normal;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* section statistics */
+.statistics h2 {
+    font: 800 40px 'Mulish';
+    color: #001A49;
+}
+
+.statistics p {
+    font: 400 16px 'Mulish';
+    ;
+    color: #001A49;
+}
+
+.statistics .wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #E7EAEB;
+    height: 172px;
+    align-items: center;
+}
+
+.statistics .wrapper div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 373px;
+
+}
+.statistics .wrapper div:not(:last-child)
+{
+    border-right: 1px solid #E7EAEB;
+}
