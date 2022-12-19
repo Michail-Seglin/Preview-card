@@ -60,7 +60,6 @@ header nav p {
 
 }
 
-/* ЗАКОНЧИТЬ С ОТСТУПАМИ */
 header nav p:not(:last-child) {
     margin-right: 35px;
 }
@@ -137,7 +136,88 @@ section .introductory {}
     width: 373px;
 
 }
-.statistics .wrapper div:not(:last-child)
-{
+
+.statistics .wrapper div:not(:last-child) {
     border-right: 1px solid #E7EAEB;
+}
+
+/* advantage */
+.advantage {
+    width: 969px;
+    height: 1120px;
+    margin-top: 194px;
+    margin-bottom: 189px;
+}
+
+.advantage h1 {
+    font: 800 46px 'Mulish';
+    color: #001A49;
+    text-align: center;
+}
+
+.advantage p {
+    font: 400 20px 'Mulish';
+    color: #4F596A;
+    text-align: center;
+    width: 560p;
+
+}
+
+
+.advantage div h3 {
+    font: 800 24px 'Mulish';
+    color: #001A49;
+    text-align: left;
+}
+
+.advantage div p {
+    font: 400 16px 'Mulish';
+    color: #001A49;
+    text-align: left;
+}
+
+.advantage .max {
+    width: 1120px;
+    height: 172px;
+    background: #EEF7FF;
+    border-radius: 21px;
+    margin-bottom: 30px;
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+}
+.advantage .min {
+    width: 1120px;
+    height: 172px;
+    background: #EEF7FF;
+    border-radius: 21px;
+    margin-bottom: 30px;
+}
+.advantage .akt {
+    width: 1120px;
+    height: 172px;
+    background: #EEF7FF;
+    border-radius: 21px;
+    margin-bottom: 30px;
+}
+.advantage .all {
+    width: 1120px;
+    height: 172px;
+    background: #EEF7FF;
+    border-radius: 21px;
+    margin-bottom: 30px;
+}
+.advantage .img-oval{
+    background-image: url(./assets/Group\ 8.svg);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+display: flex;
+    justify-content: center;
+}
+.advantage .max div{
+    display: flex;
+    flex-direction: column;
+width: 950px;
 }
