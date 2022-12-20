@@ -158,7 +158,6 @@ section .introductory {}
     font: 400 20px 'Mulish';
     color: #4F596A;
     text-align: center;
-    width: 560p;
 
 }
 
@@ -192,6 +191,7 @@ section .introductory {}
     background: #EEF7FF;
     border-radius: 21px;
     margin-bottom: 30px;
+    
 }
 
 .advantage .akt {
@@ -289,4 +289,66 @@ footer .name p {
 footer .name h3 {
     font: 800 37px 'Mulish';
     color: #001A49;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        width: 600px;
+    }
+
+    header {
+        width: 600px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .introductory {
+        margin-top: 100px;
+
+    }
+
+    .introductory .info h1 {
+        font: 600 30px;
+    }
+
+    .introductory .info .btn {
+        margin: auto;
+    }
+
+    .introductory .info p {
+        text-align: center;
+    }
+
+    .introductory .img-video {
+        display: none;
+    }
+
+    .statistics .wrapper {
+        flex-direction: column;
+        background-color: #F5F5F5;
+        border-width: 0;
+        align-items: center;
+    }
+
+    .statistics .wrapper div:not(:last-child) {
+        border-width: 0;
+    }
+
+    .advantage div {
+        width: 600px;
+        align-items: center;
+    }
+
+    .entry .img-marico {
+        width: 76px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .entry h1 {
+        font: 500 20px 'Mulish';
+        text-align: center;
+    }
 }
