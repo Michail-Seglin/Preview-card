@@ -114,7 +114,6 @@ section .introductory {}
 
 .statistics p {
     font: 400 16px 'Mulish';
-    ;
     color: #001A49;
 }
 
@@ -186,6 +185,7 @@ section .introductory {}
     display: flex;
     justify-content: center;
 }
+
 .advantage .min {
     width: 1120px;
     height: 172px;
@@ -193,6 +193,7 @@ section .introductory {}
     border-radius: 21px;
     margin-bottom: 30px;
 }
+
 .advantage .akt {
     width: 1120px;
     height: 172px;
@@ -200,24 +201,92 @@ section .introductory {}
     border-radius: 21px;
     margin-bottom: 30px;
 }
+
 .advantage .all {
     width: 1120px;
     height: 172px;
     background: #EEF7FF;
     border-radius: 21px;
-    margin-bottom: 30px;
 }
-.advantage .img-oval{
+
+.advantage .img-oval {
     background-image: url(./assets/Group\ 8.svg);
     background-repeat: no-repeat;
     width: 64px;
     height: 64px;
     background-size: contain;
-display: flex;
+    display: flex;
     justify-content: center;
 }
-.advantage .max div{
+
+.advantage .max div {
     display: flex;
     flex-direction: column;
-width: 950px;
+}
+
+
+/* entry */
+.entry {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 122px;
+}
+
+.entry .img-marico {
+    background-image: url(./assets/Marico.svg);
+    width: 153px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+}
+
+.entry h1 {
+    font: 800 50px 'Mulish';
+    color: #001A49;
+    text-align: center;
+
+}
+
+.entry .btn {
+    background: linear-gradient(44.11deg, #8FBBE6 15.75%, #3D75BF 84.63%);
+    border-radius: 33px;
+    width: 206px;
+    padding: 19px 0;
+    font: 700 20px normal;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 125px;
+    margin-top: 149px;
+}
+
+footer p {
+    font: 500 32px 'Poppins';
+    color: #707070;
+}
+
+footer .name {
+    flex-direction: column;
+
+}
+
+footer .name p {
+    font: 500 32px 'Poppins';
+    color: #707070;
+}
+
+footer .name h3 {
+    font: 800 37px 'Mulish';
+    color: #001A49;
 }
