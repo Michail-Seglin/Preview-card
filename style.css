@@ -65,8 +65,6 @@ header nav p:not(:last-child) {
 }
 
 /* main */
-section .introductory {}
-
 .introductory .img-video {
     background-image: url(./assets/Group\ 7.svg);
     background-repeat: no-repeat;
@@ -107,6 +105,7 @@ section .introductory {}
 }
 
 /* section statistics */
+
 .statistics h2 {
     font: 800 40px 'Mulish';
     color: #001A49;
@@ -124,6 +123,8 @@ section .introductory {}
     border: 1px solid #E7EAEB;
     height: 172px;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .statistics .wrapper div {
@@ -134,6 +135,18 @@ section .introductory {}
     justify-content: center;
     width: 373px;
 
+}
+
+.statistics .img-side {
+
+    background-image: url(./assets/Side.svg);
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 288px;
+    background-size: contain;
+    position: absolute;
+    left: -100px;
+    z-index: 1;
 }
 
 .statistics .wrapper div:not(:last-child) {
@@ -172,13 +185,17 @@ section .introductory {}
     text-align: left;
 }
 
-.advantage .akt, .advantage .all, .advantage .min, .advantage .max {
+.advantage .akt,
+.advantage .all,
+.advantage .min,
+.advantage .max {
     width: 1120px;
     height: 172px;
     background: #EEF7FF;
     border-radius: 21px;
     margin-bottom: 30px;
     display: flex;
+    align-items: center;
 }
 
 
@@ -190,13 +207,8 @@ section .introductory {}
     background-size: contain;
     display: flex;
     justify-content: center;
+    margin: 0 20px 0 20px;
 }
-
-.advantage .max div {
-    display: flex;
-    flex-direction: column;
-}
-
 
 /* entry */
 .entry {
@@ -264,6 +276,14 @@ footer .name h3 {
     color: #001A49;
 }
 
+footer .img-marico {
+    background-image: url(./assets/Marico.svg);
+    width: 79px;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 @media screen and (max-width:600px) {
     body {
         width: 600px;
@@ -283,7 +303,8 @@ footer .name h3 {
     }
 
     .introductory .info h1 {
-        font: 600 30px;
+        font-size: 30px;
+
     }
 
     .introductory .info .btn {
@@ -298,6 +319,10 @@ footer .name h3 {
         display: none;
     }
 
+    .statistics .img-side {
+        display: none;
+    }
+
     .statistics .wrapper {
         flex-direction: column;
         background-color: #F5F5F5;
@@ -309,9 +334,25 @@ footer .name h3 {
         border-width: 0;
     }
 
+    .advantage {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
     .advantage div {
         width: 600px;
         align-items: center;
+
+    }
+
+
+
+    .advantage h1 {
+        font: 500 22px "Mulish";
+    }
+
+    .entry {
+        margin-top: 10px;
     }
 
     .entry .img-marico {
@@ -325,7 +366,34 @@ footer .name h3 {
         text-align: center;
     }
 
-    .advantage .akt, .advantage .all, .advantage .min, .advantage .max {
+    .advantage .akt,
+    .advantage .all,
+    .advantage .min,
+    .advantage .max {
         width: 600px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    footer .img-marico {
+        width: 40px;
+        height: 28px;
+    }
+
+    footer .name h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer .name p {
+        font-size: 16px;
     }
 }
